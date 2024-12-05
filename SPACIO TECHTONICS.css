@@ -1,0 +1,631 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-appointment {
+    padding: 0.5rem 1rem;
+    background: #0056d8;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main {
+    position: relative;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('41169234dbdfb0c582b472ce1d488588.png') no-repeat center center/cover;
+}
+
+.content h1 {
+    font-size: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.highlight {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #0056d8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f4f4f4;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: left;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.red-line {
+    display: inline-block;
+    width: 5px;
+    height: 2rem;
+    background-color: red;
+    margin-right: 1rem;
+}
+
+.about-content p {
+    margin: 1rem 0;
+}
+
+.tagline {
+    font-weight: bold;
+    margin: 2rem 0 1rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Section */
+.carousel-section {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d72638;
+    /* Red overlay color */
+    color: #fff;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.carousel-content {
+    position: relative;
+    text-align: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.carousel h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    margin: 0 1rem;
+}
+
+.left-btn {
+    position: absolute;
+    left: 2rem;
+}
+
+.right-btn {
+    position: absolute;
+    right: 2rem;
+}
+
+.carousel-btn:hover {
+    color: #aaa;
+}
+
+
+.our-presence {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.our-presence h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.our-presence .description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.our-presence .cities-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px;
+    color: #333;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.our-presence .cities-list li {
+    margin-bottom: 10px;
+}
+
+.our-presence .map {
+    position: relative;
+    margin: 30px auto;
+    max-width: 600px;
+    height: auto;
+}
+
+.our-presence .map img {
+    width: 100%;
+    height: auto;
+}
+
+.our-presence .locations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.our-presence .location {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.our-presence .stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.our-presence .stat {
+    text-align: center;
+}
+
+.our-presence .stat h3 {
+    font-size: 2rem;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.our-presence .stat p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.latest-work {
+    font-family: Arial, sans-serif;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.latest-work .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.latest-work .highlight {
+    border-left: 4px solid #e63946;
+    margin-right: 10px;
+}
+
+.latest-work .view-all {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.latest-work .carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.latest-work .slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.latest-work .slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.latest-work .info {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.latest-work .info .arrow {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.latest-work .copyright {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.controls button:hover {
+    color: #e63946;
+}
+
+
+
+.insights {
+    font-family: Arial, sans-serif;
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.insights .header h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.insights .highlight {
+    border-left: 4px solid #e63946;
+    padding-left: 10px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel .slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel .slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.carousel .card {
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.card .icon {
+    font-size: 3rem;
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.card .date {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.carousel .prev,
+.carousel .next {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.footer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+/* Continuation Section Styling */
+.continuation-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #8d2f2f;
+    /* Matches reddish background */
+    color: white;
+    font-family: Arial, sans-serif;
+    /* Adjust as per the original style */
+}
+
+.text-container {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.text-container a {
+    color: white;
+    text-decoration: underline;
+}
+
+.text-container a:hover {
+    color: #ffcccb;
+}
+
+.email-signup {
+    flex: 1;
+    max-width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.email-signup h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.email-signup p {
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.signup-form input {
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.signup-form input::placeholder {
+    color: #ffffff;
+}
+
+.signup-form button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #8d2f2f;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+    background-color: #ffcccb;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #121212;
+    /* Dark background */
+    color: white;
+    padding: 20px 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer-center h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    margin: 5px 0;
+}
+
+.footer-center ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-center ul li a:hover {
+    color: white;
+}
+
+.footer-right h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.footer-right .phone-icon {
+    display: inline-block;
+    background: url('phone-icon.png') no-repeat center center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+}
